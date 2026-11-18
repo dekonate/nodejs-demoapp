@@ -10,7 +10,7 @@ export async function getUserDetails(accessToken) {
   try {
     const graphReq = {
       url: 'https://graph.microsoft.com/v1.0/me',
-      headers: { Authorization: accessToken 
+      headers: { Authorization: accessToken },
     }
 
     const resp = await axios(graphReq)
